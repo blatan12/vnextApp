@@ -14,4 +14,4 @@ EXPOSE 5000
 # When the image starts it will execute the “k web” command
 # effectively starting our web application
 # (listening on port 5000 by default)
-ENTRYPOINT ["k", "web"]
+ENTRYPOINT ["k", "kestrel"]
