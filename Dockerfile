@@ -8,10 +8,10 @@ WORKDIR /app
 RUN kpm restore
 # set the working directory for subsequent commands
 # WORKDIR /app/src/helloworldweb
-# expose TCP port 5000 from container
-EXPOSE 5000
+# expose TCP port 5004 from container
+EXPOSE 5004
 # Configure the image as an executable
 # When the image starts it will execute the “k web” command
 # effectively starting our web application
-# (listening on port 5000 by default)
+# (listening on port 5004 by default)
 ENTRYPOINT ["k", "kestrel"]
